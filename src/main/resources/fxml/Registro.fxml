@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RegistroController">
+   <children>
+      <ScrollPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <content>
+            <VBox>
+               <children>
+                  <Label text="INGRESAR DATOS VEHICULOS">
+                     <font>
+                        <Font name="Garamond" size="30.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="400.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane style="-fx-border-color: #000000; -fx-background-color: #f5f5f5f5;">
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="1113.0">
+                           <children>
+                              <Label text="TASACIÓN N°:">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="var0" prefHeight="25.0" prefWidth="100.0" text="13859">
+                                 <HBox.margin>
+                                    <Insets left="70.0" top="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label text="AÑO:">
+                                 <HBox.margin>
+                                    <Insets left="140.0" top="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="var1" prefHeight="25.0" prefWidth="179.0">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutY="40.0" prefHeight="35.0" prefWidth="1113.0">
+                           <children>
+                              <Label text="SEÑORES:">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="var2" prefHeight="25.0" prefWidth="200.0" text="SANTANDER CONSUMER.">
+                                 <HBox.margin>
+                                    <Insets left="94.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="var3" prefWidth="230.0" promptText="Agencia" text="Agencia San Isidro">
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutY="75.0" prefHeight="35.0" prefWidth="1113.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="38.0" text="ATT.:">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="var4" prefWidth="200.0" text="Giovana Rejas">
+                                 <HBox.margin>
+                                    <Insets left="108.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="var5" prefWidth="231.0" promptText="Cargo" text="Analista de Recuperaciones">
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="var6" prefWidth="180.0" promptText="Telef." text="(511) 519 5600 anexo 5689">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <TextField fx:id="var7" prefWidth="180.0" promptText="Cel." text="970 374 711">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutY="110.0" prefHeight="35.0" prefWidth="1113.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="89.0" text="PROPIETARIO:">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="var8" prefWidth="200.0" text="HARO VERAMENDI FRANCO ALI">
+                                 <HBox.margin>
+                                    <Insets left="56.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label prefHeight="17.0" prefWidth="79.0" text="TIPO DE BIEN :">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="var9" prefHeight="25.0" prefWidth="110.0" text="VEHÍCULO">
+                                 <HBox.margin>
+                                    <Insets left="44.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutY="145.0" prefHeight="35.0" prefWidth="1113.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="139.0" text="PERSONA DE CONTACTO:">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="var10" prefWidth="200.0" text="JACQUELINE CHAVEZ V.">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label prefHeight="17.0" prefWidth="118.0" text="FECHA DE TASACIÓN:">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="var11" prefHeight="25.0" prefWidth="110.0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </DatePicker>
+                              <Label prefHeight="17.0" prefWidth="95.0" text="TIPO DE CAMBIO:">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="var12" prefHeight="25.0" prefWidth="78.0" text="3.25">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Hyperlink fx:id="link" onAction="#urltipocambio" text="Consultar Tipo de Cambio" underline="true">
+                                 <HBox.margin>
+                                    <Insets left="24.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutY="180.0" prefHeight="35.0" prefWidth="1113.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="66.0" text="TASADOR:">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="var13" prefWidth="200.0" text="AVALUOS é INGENIERIA SAC">
+                                 <HBox.margin>
+                                    <Insets left="79.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="var14" prefHeight="25.0" prefWidth="440.0" text="Registro REPEV (Superintendencia de Banca y Seguros) es: 216-2016">
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="5.0" layoutY="215.0" prefHeight="50.0" prefWidth="1098.0">
+                           <children>
+                              <Button fx:id="btnDesc" mnemonicParsing="false" onAction="#Desc" style="-fx-background-color: #026F70;" text="Descripción del Auto" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="400.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <HBox prefHeight="102.0" style="-fx-border-color: #000000;">
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                     <children>
+                        <VBox prefHeight="91.0" prefWidth="540.0">
+                           <children>
+                              <Label text="DETALLES DE LA INSPECCIÓN">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Dirección:">
+                                       <HBox.margin>
+                                          <Insets left="15.0" top="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var22" onKeyReleased="#variable22" prefHeight="25.0" prefWidth="468.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="46.0" text="Distrito:">
+                                       <HBox.margin>
+                                          <Insets left="15.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var23" onKeyReleased="#variable23" prefHeight="25.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="17.0" prefWidth="55.0" text="Provincia:">
+                                       <HBox.margin>
+                                          <Insets left="12.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var24" onKeyReleased="#variable24" prefHeight="25.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="17.0" prefWidth="82.0" text="Departamento:">
+                                       <HBox.margin>
+                                          <Insets left="12.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var25" onKeyReleased="#variable25" prefHeight="25.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="91.0" prefWidth="540.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label text="RESULTADOS DE LA INSPECCIÓN">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextArea fx:id="var26" text="Como resultado de la inspección visual externa realizada al vehículo, éste se encontró en buen estado de conservación, operativo." wrapText="true">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Pane style="-fx-border-color: #000000;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Label layoutX="288.0" layoutY="4.0" text="Caracteristicas del Vehiculo">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <HBox layoutY="26.0" prefHeight="260.0" prefWidth="830.0">
+                                 <children>
+                                    <VBox>
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Placa:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var27" prefHeight="25.0" prefWidth="140.0">
+                                                   <HBox.margin>
+                                                      <Insets left="83.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="15.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Partida Registral:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var28" prefHeight="25.0" prefWidth="140.0" text="60583125">
+                                                   <HBox.margin>
+                                                      <Insets left="24.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Año de Fabricación: ">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var29" prefWidth="140.0">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Categoria - Clase:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var30" prefWidth="140.0" text="2022">
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Modelo:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var31" prefWidth="140.0">
+                                                   <HBox.margin>
+                                                      <Insets left="69.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Marca:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var32" prefWidth="140.0">
+                                                   <HBox.margin>
+                                                      <Insets left="77.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Serie / Chasis:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var33" prefWidth="140.0">
+                                                   <HBox.margin>
+                                                      <Insets left="39.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="N° Motor:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var34" prefWidth="140.0" text="LL518L908">
+                                                   <HBox.margin>
+                                                      <Insets left="60.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox>
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Color:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var35" prefWidth="140.0" text="ROJO METALICO">
+                                                   <HBox.margin>
+                                                      <Insets left="57.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="15.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Carrocería:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var36" prefWidth="140.0" text="SUB">
+                                                   <HBox.margin>
+                                                      <Insets left="32.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Combustible:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var37" prefWidth="140.0" text="GASOLINA">
+                                                   <HBox.margin>
+                                                      <Insets left="19.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Forma Rodante:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var38" prefWidth="140.0" text="4 X 2">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Versión:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var39" prefWidth="140.0" text="1.5 LT MT">
+                                                   <HBox.margin>
+                                                      <Insets left="46.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Ejes:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var40" prefWidth="140.0" text="2">
+                                                   <HBox.margin>
+                                                      <Insets left="66.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Ruedas:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var41" prefWidth="140.0" text="4">
+                                                   <HBox.margin>
+                                                      <Insets left="47.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Asientos:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var42" prefWidth="140.0" text="5">
+                                                   <HBox.margin>
+                                                      <Insets left="41.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox>
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="75.0" text="Pasajeros:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var43" prefWidth="140.0" text="4">
+                                                   <HBox.margin>
+                                                      <Insets left="62.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="15.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Cilindros:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var44" prefWidth="140.0" text="4">
+                                                   <HBox.margin>
+                                                      <Insets left="88.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Carga útil:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var45" prefWidth="140.0" text="6,246">
+                                                   <HBox.margin>
+                                                      <Insets left="84.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="68.0" text="Kilometraje:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var46" prefWidth="140.0" text="0.450">
+                                                   <HBox.margin>
+                                                      <Insets left="71.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="87.0" text="Observaciones:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var47" prefWidth="140.0" text="SIN OBSERVACIONES">
+                                                   <HBox.margin>
+                                                      <Insets left="50.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="76.0" text="Operatividad:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var48" prefWidth="140.0" text="OPERATIVO">
+                                                   <HBox.margin>
+                                                      <Insets left="61.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="132.0" text="Estado de Conservación:">
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" top="5.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <TextField fx:id="var49" prefWidth="140.0" text="EN BUEN ESTADO">
+                                                   <HBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" top="10.0" />
+                                             </VBox.margin>
+                                             <children>
+                                                <Button fx:id="btnadic" mnemonicParsing="false" onAction="#adic" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #026F70;" text="Caracteristicas Adicionales" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold Italic" size="14.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="50.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                        </Pane>
+                        <VBox prefHeight="298.0" prefWidth="273.0" style="-fx-border-color: #000000;">
+                           <children>
+                              <Button fx:id="btnImg" mnemonicParsing="false" onAction="#Img" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #026F70;" text="Imagen" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="40.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <ImageView fx:id="ImgView" fitHeight="180.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+                                 <viewport>
+                                    <Rectangle2D />
+                                 </viewport>
+                                 <VBox.margin>
+                                    <Insets left="5.0" right="5.0" top="20.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane style="-fx-border-color: #000000;">
+                     <VBox.margin>
+                        <Insets left="20.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox>
+                           <children>
+                              <Label text="Tasación">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="350.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <VBox prefWidth="540.0">
+                                       <children>
+                                          <Label text="Objeto de tasación">
+                                             <VBox.margin>
+                                                <Insets left="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextArea fx:id="var66" prefHeight="50.0" prefWidth="520.0" text="Determinar el valor comercial del vehículo." wrapText="true">
+                                             <VBox.margin>
+                                                <Insets left="20.0" top="5.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </TextArea>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefWidth="540.0">
+                                       <children>
+                                          <Label text="Bases para su Desarrollo">
+                                             <VBox.margin>
+                                                <Insets left="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextArea fx:id="var67" prefHeight="50.0" prefWidth="478.0" text="En base a la información recibida, así como la investigación de precios de vehículos usados y nuevos (para obtener el valor similar nuevo)" wrapText="true">
+                                             <VBox.margin>
+                                                <Insets left="20.0" top="5.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </TextArea>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Label text="Metodologia Empleada">
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextArea fx:id="var68" prefHeight="80.0" text="La valorización se ha desarrollado recolectando información sobre el sistema, evaluación técnica y verificación in situ del vehículo. Los valores comerciales se han determinado considerando el lugar donde se encuentra el vehículo, el estado de conservación del mismo, la fecha de fabricación e instalación, su configuración como sistema y su obsolescencia. &#10;También se ha efectuado la investigación del mercado y labor de gabinete de la valorización, aplicando el actual Reglamento Nacional de Tasaciones del Perú (Aprobado por R.M. No. 172-2016-Vivienda, de fecha: 19-JUL-2016).&#10;" wrapText="true">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </TextArea>
+                              <Label text="Localización:">
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextArea fx:id="var69" prefHeight="40.0" wrapText="true">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="20.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </TextArea>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <TitledPane expanded="false" text="PROCEDIMIENTOS Y FORMULAS" underline="true">
+                    <content>
+                      <AnchorPane>
+                           <children>
+                              <VBox layoutX="39.6" layoutY="34.6" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+                                 <children>
+                                    <Label text="Procedimiento" />
+                                    <TextField fx:id="var70" text="Según el Reglamento General de Tasaciones del Perú en la determinación de la valorización de vehículos se aplica:">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <HBox>
+                                       <children>
+                                          <TextField fx:id="var71" prefHeight="25.0" prefWidth="540.0" text="El Valor de Reposición (VR) del bien, se determina aplicando la expresión:">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font></TextField>
+                                          <TextField fx:id="var72" prefHeight="25.0" prefWidth="540.0" text="La depreciación se calcula de acuerdo con la expresión siguiente:">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox>
+                                       <children>
+                                          <ImageView fx:id="var73" fitHeight="150.0" fitWidth="385.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/Imagen1.jpg" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="100.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                          <ImageView fx:id="var74" fitHeight="150.0" fitWidth="385.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/Imagen2.jpg" />
+                                             </image>
+                                             <HBox.margin>
+                                                <Insets left="150.0" />
+                                             </HBox.margin>
+                                          </ImageView>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TitledPane>
+                  <Pane style="-fx-border-color: #000000;">
+                     <children>
+                        <VBox>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label text="Estado de Conservación:">
+                                       <HBox.margin>
+                                          <Insets left="20.0" top="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var75" prefWidth="395.0" text="El vehículo se encuentra en buen estado y operativo.">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label prefHeight="17.0" prefWidth="183.0" text="La antigüedad del vehículo es de : ">
+                                       <HBox.margin>
+                                          <Insets left="20.0" top="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var76" prefHeight="25.0" prefWidth="343.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label text="Determinación del Valor de Tasación Comercial:">
+                                       <HBox.margin>
+                                          <Insets left="20.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var77" prefWidth="822.0">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label text="Placa:">
+                                       <HBox.margin>
+                                          <Insets left="20.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var78" prefHeight="25.0" prefWidth="120.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Marca:">
+                                       <HBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var79" prefHeight="25.0" prefWidth="135.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Serie:">
+                                       <HBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var80" prefHeight="25.0" prefWidth="159.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Modelo:">
+                                       <HBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var81" prefHeight="25.0" prefWidth="105.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Año:">
+                                       <HBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var82" prefHeight="25.0" prefWidth="131.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Estado:">
+                                       <HBox.margin>
+                                          <Insets left="15.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var83" prefHeight="25.0" prefWidth="131.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="37.0" prefWidth="70.0" text="Valor Similar Nuevo (US$):" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var84" onKeyReleased="#variable84" prefHeight="25.0" prefWidth="78.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="38.0" prefWidth="45.0" text="Ot (Factor):" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var85" prefHeight="25.0" prefWidth="130.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="34.0" prefWidth="80.0" text="Valor Residual (US$):" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var86" prefHeight="25.0" prefWidth="107.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="35.0" prefWidth="43.0" text="E (Años):" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var87" onKeyReleased="#variable87" prefHeight="25.0" prefWidth="106.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="36.0" prefWidth="66.0" text="P Expectativa:" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var88" onKeyReleased="#variable88" prefHeight="25.0" prefWidth="90.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="36.0" prefWidth="54.0" text="T (Años):" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var89" prefHeight="25.0" prefWidth="118.0">
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="37.0" prefWidth="65.0" text="Deprec. (US$):" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var90" prefHeight="25.0" prefWidth="82.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="38.0" prefWidth="43.0" text="Go (Factor):" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var91" onKeyReleased="#variable91" prefHeight="25.0" prefWidth="134.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="34.0" prefWidth="87.0" text="Valor Reposición US$:" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var92" onKeyReleased="#variable92" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="35.0" prefWidth="78.0" text="Factor Mercado (Fm):" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var93" onKeyReleased="#variable93" prefHeight="25.0" prefWidth="72.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="36.0" prefWidth="81.0" text="Valor Comercial US$:" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var94" onKeyReleased="#variable94" prefHeight="25.0" prefWidth="81.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label prefHeight="36.0" prefWidth="89.0" text="Valor Realización US$:" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var95" onKeyReleased="#variable95" prefHeight="25.0" prefWidth="85.0">
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Pane>
+                  <Pane style="-fx-border-color: #000000;">
+                     <VBox.margin>
+                        <Insets left="20.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox>
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label text="Valor Reposición Total:">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var96">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Label text="Valor Comercial:">
+                                       <HBox.margin>
+                                          <Insets left="52.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var97">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox>
+                                 <padding>
+                                    <Insets left="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <TextArea fx:id="var98" prefHeight="50.0" prefWidth="592.0" text="El Valor Comercial del bien, es el Valor de Reposición al que se le aplica un factor de mercado en función al estado de conservación y a las condiciones del mercado; conforme a la expresión siguiente:" wrapText="true">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></TextArea>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <padding>
+                                    <Insets left="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <TextArea fx:id="var99" prefHeight="42.0" prefWidth="592.0" text="El factor de mercado aplicado es de: 0.95 teniendo en cuenta el estado del vehículo y su posibilidad de venta" wrapText="true">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></TextArea>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <padding>
+                                    <Insets left="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="Valor de Realización:">
+                                       <HBox.margin>
+                                          <Insets top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="var100">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <TextArea fx:id="var101" prefHeight="53.0" prefWidth="1093.0" text="Para determinar el Valor de Realización se ajustó el Valor Comercial por un factor de 0.80, teniendo en cuenta la situación actual del mercado del vehículo, así como los gastos de venta, comisiones, avisos, etc. (Detallados como, gastos de publicidad 2.00%, Gastos de tasación 0.20%, comisión de ventas 5.00%, mantenimiento 2.00% y estimación de descuento por remate 10.00%, otros 0.80%)." wrapText="true">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="100.0" fitWidth="209.0" layoutX="631.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Imagen3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label text="Observaciones y Mercado de Colocación">
+                     <VBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox>
+                     <children>
+                        <TextField fx:id="var102" prefHeight="25.0" prefWidth="450.0" text="El mercado de colocación del vehículo es el de uso ">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <DatePicker fx:id="fechafinal" onAction="#fechfinal">
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                        <TextField fx:id="var103" prefHeight="25.0" prefWidth="420.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="43.0" prefWidth="1145.0">
+                     <children>
+                        <Button fx:id="btnexp" mnemonicParsing="false" onAction="#exp" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #026F70;" text="GENERAR" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="300.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnadjuntar" mnemonicParsing="false" onAction="#adjuntar" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #026F70;" text="ADJUNTAR IMAGENES" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="50.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnlimpiar" mnemonicParsing="false" onAction="#limpiar" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #026F70;" text="LIMPIAR DATOS" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="50.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>  
+</AnchorPane>
