@@ -62,7 +62,7 @@ public class LoadingController implements Initializable {
                         Scene scene = new Scene(root);
                         Stage stage = new Stage();
                         stage.setTitle("Ainsac - Master");
-      //stage.getIcons().add(new Image(pathHome+"\\icono\\ainsac.png"));
+    //  stage.getIcons().add(new Image(pathHome+"\\icono\\ainsac.png"));
                         stage.getIcons().add(new Image(pathHome+"\\src\\main\\resources\\images\\ainsac.png"));
                         stage.setScene(scene);
                         stage.show();

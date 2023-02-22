@@ -379,6 +379,10 @@ public class RegistroController implements Initializable {
     
     @FXML
     private DatePicker fechafinal;
+    
+    @FXML
+    private DatePicker varfechcamb;
+
  //----------------------------------------------------------------------------------------------------------------------   
     @FXML
     void adjuntar(ActionEvent event) {
@@ -656,21 +660,36 @@ public class RegistroController implements Initializable {
        ImgView.setImage(img);    
          }           
     }
+ //---------------------------------------------------------------------------------------------------------------------
+    @FXML
+    void fechatasacion(ActionEvent event) {
+        var77.setText("Los factores determinados para la valorización al "+ String.valueOf(var11.getValue())+" son los siguientes:");
+    }
 //----------------------------------------------------------------------------------------------------------------------
       @FXML
     void exp(ActionEvent event) {
+        try{
+            
+       
+                        String pathHome = "";
+                        Properties p;           
+                        pathHome = System.getProperty("user.dir");
             var mes = var11.getValue().getMonth();
             var dia = var11.getValue().getDayOfMonth();
             var anio0 = var11.getValue().getYear();
             String nombremes = mes.getDisplayName(TextStyle.FULL, new Locale("es", "ES"));
-        List<String> vari = Arrays.asList("var0","var1","var2","var3","var4","var5","var6","var7","var8","var9","var10","var11","var12","var13","var14","var15","var16","var17","var18","var19","var20","var21","varcar0","varcar1","varfecha","var22",
-        "var23","var24","var25","var26","var27","var28","var29","var30","var31","var32","var33","var34","var35","var36","var37","var38","var39","var40","var41","var42","var43","var44","var45","var46","var47","var48",
+            var mestc = varfechcamb.getValue().getMonth();
+            var diatc = varfechcamb.getValue().getDayOfMonth();
+            var aniotc = varfechcamb.getValue().getYear();
+            String nombremestc = mestc.getDisplayName(TextStyle.FULL, new Locale("es", "ES"));
+        List<String> vari = Arrays.asList("var0","var1","var2","var3","var4","var5","var6","var7","var8","var9","var10","var11","var12","var13","var14","var15","var16","var17","var18","var19","var20","var21","varcar0","varcar1","varfech","varfechinf","varfecha","var22",
+        "var23","var24","var25","var26","var27","var28","var29","varfechcamb","var30","var31","var32","var33","var34","var35","var36","var37","var38","var39","var40","var41","var42","var43","var44","var45","var46","var47","var48",
         "var49","var50","var51","var52","var53","var54","var55","var56","var57","var58","var59","var60","var61","var62","var63","var64","var65","var66","var67","var68","var69","var70","var71","var72","var75","var76",
         "var77","var78","var79","var80","var81","var82","var83","var84","var85","var86","var87","var88","var89","var90","var91","var92","var93","var94","var95","var96","var97","var98","var99","var100","var101","var102","var103",
         "varcar2","var104","varcar3","var105","varcar4","var106","varcar5","var107","varcar6","var108","varcar7","var109","varcar8","var110","varcar9","var111");
         List<String> variables = Arrays.asList(var0.getText(),var1.getText(),var2.getText(),var3.getText(),var4.getText(),var5.getText(),var6.getText(),var7.getText(),var8.getText(),var9.getText(),var10.getText(),
-        String.valueOf(var11.getValue()),var12.getText(),var13.getText(),var14.getText(),var15,var16,var17,var18,var19,var20,var21,"1.2.    VISTA PRINCIPAL","",String.valueOf(dia+" de "+nombremes+" del "+anio0),var22.getText(),var23.getText(),var24.getText(),var25.getText(),var26.getText(),
-        var27.getText(),var28.getText(),var29.getText(),var30.getText(),var31.getText(),var32.getText(),var33.getText(),var34.getText(),var35.getText(),var36.getText(),var37.getText(),var38.getText(),var39.getText(),
+        String.valueOf(var11.getValue()),var12.getText(),var13.getText(),var14.getText(),var15,var16,var17,var18,var19,var20,var21,"1.2.    VISTA PRINCIPAL","",String.valueOf(dia+" de "+nombremes+" del "+anio0),"","",var22.getText(),var23.getText(),var24.getText(),var25.getText(),var26.getText(),
+        var27.getText(),var28.getText(),var29.getText(),String.valueOf(varfechcamb.getValue()),var30.getText(),var31.getText(),var32.getText(),var33.getText(),var34.getText(),var35.getText(),var36.getText(),var37.getText(),var38.getText(),var39.getText(),
         var40.getText(),var41.getText(),var42.getText(),var43.getText(),var44.getText(),var45.getText(),var46.getText(),var47.getText(),var48.getText(),var49.getText(),var50,var51,var52,var53,var54,var55,var56,var57,
         var58,var59,var60,var61,var62,var63,var64,var65,var66.getText(),var67.getText(),var68.getText(),var69.getText(),var70.getText(),var71.getText(),var72.getText(),var75.getText(),"La antigüedad del vehículo es de: "+var76.getText(),var77.getText(),
         var78.getText(),var79.getText(),var80.getText(),var81.getText(),var82.getText(),var83.getText(),var84.getText(),var85.getText(),var86.getText(),var87.getText(),var88.getText(),var89.getText(),var90.getText(),
@@ -680,9 +699,6 @@ public class RegistroController implements Initializable {
         for (int i = 0; i < variables.size(); i++) {
               System.out.println(variables.get(i));             
           }
-        String pathHome = "";
-        Properties p;           
-        pathHome = System.getProperty("user.dir");
         FileChooser fc = new FileChooser();
         fc.setTitle("Guardar Archivo");
         fc.setInitialFileName("Nombre-Archivo");
@@ -704,6 +720,7 @@ public class RegistroController implements Initializable {
           }
 //--------------------------------------------------------------------------------------------------------------------------------------------------------          
            org.apache.commons.io.FileUtils.copyFile(new File("src\\main\\resources\\formatos\\"+vehiculo), new File(file.toString()));
+           //org.apache.commons.io.FileUtils.copyFile(new File(pathHome+"\\formatos\\"+vehiculo), new File(file.toString()));
             try (XWPFDocument docx = new XWPFDocument(POIXMLDocument.openPackage(file.toString()))) {
                 List<XWPFParagraph> paragraphs = docx.getParagraphs();
                 /*  List<String> cadena=null;
@@ -744,13 +761,13 @@ public class RegistroController implements Initializable {
                         {                            
                             l++;
                             //System.out.println("variable: "+l);                         
-                            if (l==49) {
+                            if (l==51) {
                                 if (var3.getText()!="" ) {
                                         run.addBreak();
                                     }
                             }
 //-----------------------------------------------------------------------------------------------------------------------------
-                            if (l==50) {
+                            if (l==52) {
                                 if (var4.getText()!= "") {                                                                       
                                     run.addBreak();                                                                                                           
                                     //System.out.println(".......................................................");
@@ -792,13 +809,14 @@ public class RegistroController implements Initializable {
                             {
                                 if (run.toString().trim().equalsIgnoreCase(vari.get(i)))
                                 {
-                                    System.out.println("encontro "+i);                               
+                                    System.out.println("encontro "+i);     
+                                    
                                     if(i != 11){  
-                                        if(i==22 && dir==null){
+                                        if(i==23 && dir==null){
                                            run.removeBreak();
                                            run.setText("",0);
                                            run.removeBreak();
-                                        }else if(i==22 && dir!=null){                                            
+                                        }else if(i==23 && dir!=null){                                            
                                             run.setText(variables.get(i),0);
                                         }else{
                                             run.setText(variables.get(i),0); 
@@ -809,15 +827,34 @@ public class RegistroController implements Initializable {
                                        run.setText(dia+" DE "+nombremes.toUpperCase()+" DEL "+anio0,0);     
                                         }
                                                                            
-                                    }                                                                                                            
+                                    }  
+                                    if (i == 35) {
+                                        if (varfechcamb.getValue()!= null) 
+                                       {                                                                                                                          
+                                       run.setText(diatc+"-"+nombremestc.toUpperCase()+"-"+aniotc,0);     
+                                        }
+                                    }
+                                    if (i == 25) {
+                                            var mesff = fechafinal.getValue().getMonth();
+                                            var diaff = fechafinal.getValue().getDayOfMonth();
+                                            var anioff = fechafinal.getValue().getYear();
+                                            String nombremesff = mesff.getDisplayName(TextStyle.FULL, new Locale("es", "ES"));
+                                       run.setText(diaff+" de "+nombremesff.toUpperCase()+" del "+anioff,0);   
+                                        
+                                    }
+                                    if (i==24) {
+                                        run.setText(dia+" de "+nombremes.toUpperCase()+" del "+anio0,0);
+                                    }
 //-------------------------------------------------------------------------------------------------------------------------
                                   if (i==10)
                                     {
                                         XWPFTable table = docx.getTables().get(0);
-                                        var fila1 = table.getRow(0);
-                                        fila1.getCell(2).setText(var31.getText());
-                                        var fila2 = table.getRow(1);
-                                        fila2.getCell(2).setText(var31.getText());
+                                        var fil1 = table.getRow(0);
+                                                                               
+                                            fil1.getCell(2).setText(var31.getText());
+                                            var fila2 = table.getRow(1);
+                                            fila2.getCell(2).setText(var31.getText());                                        
+                                        
                                         var fila3 = table.getRow(2);
                                         fila3.getCell(2).setText(var27.getText());
                                         var fila4 = table.getRow(3);
@@ -1009,7 +1046,7 @@ public class RegistroController implements Initializable {
                                         run.removeTab();
                                         run.addBreak();
                                         InputStream pic = new FileInputStream(dir);
-                                        run.addPicture(pic, docx.PICTURE_TYPE_JPEG, "auto"+i, Units.toEMU(210), Units.toEMU(150));                                          
+                                        run.addPicture(pic, docx.PICTURE_TYPE_JPEG, "auto"+i, Units.toEMU(200), Units.toEMU(140));                                          
                                         run.addBreak();
                                         pic.close();  
                                             
@@ -1385,8 +1422,10 @@ public class RegistroController implements Initializable {
                 for (int i = 0; i < we.getText().length(); i++) {
                 System.out.println(we.getText());
                 System.out.println(i+"--------------------------------------");
-                }*/                
+                }*/            
+                 
                 FileOutputStream ouputStream = new FileOutputStream("src\\main\\resources\\formatos\\vehiculoscopia.docx");
+        //  FileOutputStream ouputStream = new FileOutputStream(pathHome+"\\formatos\\vehiculoscopia.docx");
                 docx.write(ouputStream);
                 ouputStream.close();                                
             }         
@@ -1398,7 +1437,10 @@ public class RegistroController implements Initializable {
                 Runtime.getRuntime().exec("cmd /c start "+file.toString()); 
         //Platform.exit();
         }catch(Exception ex){
-            ex.printStackTrace();
+            ex.printStackTrace();          
+        }
+       }catch(Exception ex){
+            JOptionPane.showMessageDialog(null, ex);
         }
     }
 //-----------------------------------------------------------------------------------------------------------------------

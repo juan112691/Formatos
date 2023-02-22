@@ -33,18 +33,18 @@
                         <Insets bottom="10.0" left="400.0" top="10.0" />
                      </VBox.margin>
                   </Label>
-                  <Pane style="-fx-border-color: #000000; -fx-background-color: #f5f5f5f5;">
+                  <Pane prefHeight="314.0" prefWidth="1115.0" style="-fx-border-color: #000000; -fx-background-color: #f5f5f5f5;">
                      <children>
                         <HBox prefHeight="40.0" prefWidth="1113.0">
                            <children>
-                              <Label text="TASACIÓN N°:">
+                              <Label prefHeight="17.0" prefWidth="140.0" text="TASACIÓN N°:">
                                  <HBox.margin>
                                     <Insets left="20.0" top="10.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="var0" prefHeight="25.0" prefWidth="100.0" text="13859">
+                              <TextField fx:id="var0" prefHeight="25.0" prefWidth="100.0">
                                  <HBox.margin>
-                                    <Insets left="70.0" top="5.0" />
+                                    <Insets left="5.0" top="5.0" />
                                  </HBox.margin>
                               </TextField>
                               <Label text="AÑO:">
@@ -52,7 +52,7 @@
                                     <Insets left="140.0" top="10.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="var1" prefHeight="25.0" prefWidth="179.0">
+                              <TextField fx:id="var1" prefHeight="25.0" prefWidth="195.0">
                                  <HBox.margin>
                                     <Insets left="20.0" top="5.0" />
                                  </HBox.margin>
@@ -67,17 +67,17 @@
                         </HBox>
                         <HBox layoutY="40.0" prefHeight="35.0" prefWidth="1113.0">
                            <children>
-                              <Label text="SEÑORES:">
+                              <Label prefHeight="17.0" prefWidth="140.0" text="SEÑORES:">
                                  <HBox.margin>
                                     <Insets left="20.0" top="5.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="var2" prefHeight="25.0" prefWidth="200.0" text="SANTANDER CONSUMER.">
+                              <TextField fx:id="var2" prefHeight="25.0" prefWidth="200.0">
                                  <HBox.margin>
-                                    <Insets left="94.0" />
+                                    <Insets left="5.0" />
                                  </HBox.margin>
                               </TextField>
-                              <TextField fx:id="var3" prefWidth="230.0" promptText="Agencia" text="Agencia San Isidro">
+                              <TextField fx:id="var3" prefWidth="245.0" promptText="Agencia">
                                  <HBox.margin>
                                     <Insets left="40.0" />
                                  </HBox.margin>
@@ -89,27 +89,27 @@
                         </HBox>
                         <HBox layoutY="75.0" prefHeight="35.0" prefWidth="1113.0">
                            <children>
-                              <Label prefHeight="17.0" prefWidth="38.0" text="ATT.:">
+                              <Label prefHeight="17.0" prefWidth="140.0" text="ATT.:">
                                  <HBox.margin>
                                     <Insets left="20.0" top="5.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="var4" prefWidth="200.0" text="Giovana Rejas">
+                              <TextField fx:id="var4" prefWidth="200.0">
                                  <HBox.margin>
-                                    <Insets left="108.0" />
+                                    <Insets left="5.0" />
                                  </HBox.margin>
                               </TextField>
-                              <TextField fx:id="var5" prefWidth="231.0" promptText="Cargo" text="Analista de Recuperaciones">
+                              <TextField fx:id="var5" prefWidth="245.0" promptText="Cargo">
                                  <HBox.margin>
                                     <Insets left="40.0" />
                                  </HBox.margin>
                               </TextField>
-                              <TextField fx:id="var6" prefWidth="180.0" promptText="Telef." text="(511) 519 5600 anexo 5689">
+                              <TextField fx:id="var6" prefWidth="180.0" promptText="Telef.">
                                  <HBox.margin>
                                     <Insets left="30.0" />
                                  </HBox.margin>
                               </TextField>
-                              <TextField fx:id="var7" prefWidth="180.0" promptText="Cel." text="970 374 711">
+                              <TextField fx:id="var7" prefWidth="180.0" promptText="Cel.">
                                  <HBox.margin>
                                     <Insets left="20.0" right="20.0" />
                                  </HBox.margin>
@@ -121,14 +121,14 @@
                         </HBox>
                         <HBox layoutY="110.0" prefHeight="35.0" prefWidth="1113.0">
                            <children>
-                              <Label prefHeight="17.0" prefWidth="89.0" text="PROPIETARIO:">
+                              <Label prefHeight="17.0" prefWidth="140.0" text="PROPIETARIO:">
                                  <HBox.margin>
                                     <Insets left="20.0" top="5.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="var8" prefWidth="200.0" text="HARO VERAMENDI FRANCO ALI">
+                              <TextField fx:id="var8" prefWidth="200.0">
                                  <HBox.margin>
-                                    <Insets left="56.0" />
+                                    <Insets left="5.0" />
                                  </HBox.margin>
                               </TextField>
                               <Label prefHeight="17.0" prefWidth="79.0" text="TIPO DE BIEN :">
@@ -136,9 +136,9 @@
                                     <Insets left="40.0" top="5.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="var9" prefHeight="25.0" prefWidth="110.0" text="VEHÍCULO">
+                              <TextField fx:id="var9" prefHeight="25.0" prefWidth="110.0">
                                  <HBox.margin>
-                                    <Insets left="44.0" />
+                                    <Insets left="60.0" />
                                  </HBox.margin>
                               </TextField>
                            </children>
@@ -148,12 +148,12 @@
                         </HBox>
                         <HBox layoutY="145.0" prefHeight="35.0" prefWidth="1113.0">
                            <children>
-                              <Label prefHeight="17.0" prefWidth="139.0" text="PERSONA DE CONTACTO:">
+                              <Label prefHeight="17.0" prefWidth="140.0" text="PERSONA DE CONTACTO:">
                                  <HBox.margin>
                                     <Insets left="20.0" top="5.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="var10" prefWidth="200.0" text="JACQUELINE CHAVEZ V.">
+                              <TextField fx:id="var10" prefWidth="200.0">
                                  <HBox.margin>
                                     <Insets left="5.0" />
                                  </HBox.margin>
@@ -163,22 +163,45 @@
                                     <Insets left="40.0" top="5.0" />
                                  </HBox.margin>
                               </Label>
-                              <DatePicker fx:id="var11" prefHeight="25.0" prefWidth="110.0">
+                              <DatePicker fx:id="var11" onAction="#fechatasacion" prefHeight="25.0" prefWidth="110.0">
                                  <HBox.margin>
-                                    <Insets left="5.0" />
+                                    <Insets left="20.0" />
                                  </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
                               </DatePicker>
-                              <Label prefHeight="17.0" prefWidth="95.0" text="TIPO DE CAMBIO:">
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="1.0" layoutY="180.0" prefHeight="35.0" prefWidth="1113.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="140.0" text="TIPO DE CAMBIO:">
                                  <HBox.margin>
-                                    <Insets left="30.0" top="5.0" />
+                                    <Insets left="20.0" top="5.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField fx:id="var12" prefHeight="25.0" prefWidth="78.0" text="3.25">
+                              <TextField fx:id="var12" prefHeight="25.0" prefWidth="199.0">
                                  <HBox.margin>
                                     <Insets left="5.0" />
                                  </HBox.margin>
                               </TextField>
-                              <Hyperlink fx:id="link" onAction="#urltipocambio" text="Consultar Tipo de Cambio" underline="true">
+                              <Label text="FECHA TIPO DE CAMBIO:">
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="varfechcamb" prefHeight="25.0" prefWidth="110.0">
+                                 <HBox.margin>
+                                    <Insets left="6.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </DatePicker>
+                              <Hyperlink fx:id="link1" onAction="#urltipocambio" text="Consultar Tipo de Cambio" underline="true">
                                  <HBox.margin>
                                     <Insets left="24.0" />
                                  </HBox.margin>
@@ -191,16 +214,16 @@
                               <Insets bottom="5.0" top="5.0" />
                            </padding>
                         </HBox>
-                        <HBox layoutY="180.0" prefHeight="35.0" prefWidth="1113.0">
+                        <HBox layoutY="215.0" prefHeight="35.0" prefWidth="1113.0">
                            <children>
-                              <Label prefHeight="17.0" prefWidth="66.0" text="TASADOR:">
+                              <Label prefHeight="17.0" prefWidth="140.0" text="TASADOR:">
                                  <HBox.margin>
                                     <Insets left="20.0" top="5.0" />
                                  </HBox.margin>
                               </Label>
                               <TextField fx:id="var13" prefWidth="200.0" text="AVALUOS é INGENIERIA SAC">
                                  <HBox.margin>
-                                    <Insets left="79.0" />
+                                    <Insets left="5.0" />
                                  </HBox.margin>
                                  <font>
                                     <Font name="System Bold" size="12.0" />
@@ -219,7 +242,7 @@
                               <Insets bottom="5.0" top="5.0" />
                            </padding>
                         </HBox>
-                        <HBox layoutX="5.0" layoutY="215.0" prefHeight="50.0" prefWidth="1098.0">
+                        <HBox layoutY="250.0" prefHeight="50.0" prefWidth="1098.0">
                            <children>
                               <Button fx:id="btnDesc" mnemonicParsing="false" onAction="#Desc" style="-fx-background-color: #026F70;" text="Descripción del Auto" textFill="WHITE">
                                  <font>
@@ -228,6 +251,9 @@
                                  <HBox.margin>
                                     <Insets left="400.0" />
                                  </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
                               </Button>
                            </children>
                            <padding>
@@ -369,7 +395,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var28" prefHeight="25.0" prefWidth="140.0" text="60583125">
+                                                <TextField fx:id="var28" prefHeight="25.0" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="24.0" />
                                                    </HBox.margin>
@@ -403,7 +429,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var30" prefWidth="140.0" text="2022">
+                                                <TextField fx:id="var30" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="20.0" />
                                                    </HBox.margin>
@@ -471,7 +497,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var34" prefWidth="140.0" text="LL518L908">
+                                                <TextField fx:id="var34" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="60.0" />
                                                    </HBox.margin>
@@ -495,7 +521,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var35" prefWidth="140.0" text="ROJO METALICO">
+                                                <TextField fx:id="var35" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="57.0" />
                                                    </HBox.margin>
@@ -512,7 +538,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var36" prefWidth="140.0" text="SUB">
+                                                <TextField fx:id="var36" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="32.0" />
                                                    </HBox.margin>
@@ -529,7 +555,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var37" prefWidth="140.0" text="GASOLINA">
+                                                <TextField fx:id="var37" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="19.0" />
                                                    </HBox.margin>
@@ -546,7 +572,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var38" prefWidth="140.0" text="4 X 2">
+                                                <TextField fx:id="var38" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="5.0" />
                                                    </HBox.margin>
@@ -563,7 +589,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var39" prefWidth="140.0" text="1.5 LT MT">
+                                                <TextField fx:id="var39" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="46.0" />
                                                    </HBox.margin>
@@ -580,7 +606,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var40" prefWidth="140.0" text="2">
+                                                <TextField fx:id="var40" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="66.0" />
                                                    </HBox.margin>
@@ -597,7 +623,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var41" prefWidth="140.0" text="4">
+                                                <TextField fx:id="var41" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="47.0" />
                                                    </HBox.margin>
@@ -614,7 +640,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var42" prefWidth="140.0" text="5">
+                                                <TextField fx:id="var42" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="41.0" />
                                                    </HBox.margin>
@@ -638,7 +664,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var43" prefWidth="140.0" text="4">
+                                                <TextField fx:id="var43" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="62.0" />
                                                    </HBox.margin>
@@ -655,7 +681,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var44" prefWidth="140.0" text="4">
+                                                <TextField fx:id="var44" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="88.0" />
                                                    </HBox.margin>
@@ -672,7 +698,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var45" prefWidth="140.0" text="6,246">
+                                                <TextField fx:id="var45" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="84.0" />
                                                    </HBox.margin>
@@ -689,7 +715,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var46" prefWidth="140.0" text="0.450">
+                                                <TextField fx:id="var46" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="71.0" />
                                                    </HBox.margin>
@@ -706,7 +732,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var47" prefWidth="140.0" text="SIN OBSERVACIONES">
+                                                <TextField fx:id="var47" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="50.0" />
                                                    </HBox.margin>
@@ -723,7 +749,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var48" prefWidth="140.0" text="OPERATIVO">
+                                                <TextField fx:id="var48" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="61.0" />
                                                    </HBox.margin>
@@ -740,7 +766,7 @@
                                                       <Insets left="15.0" top="5.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <TextField fx:id="var49" prefWidth="140.0" text="EN BUEN ESTADO">
+                                                <TextField fx:id="var49" prefWidth="140.0">
                                                    <HBox.margin>
                                                       <Insets left="5.0" />
                                                    </HBox.margin>
@@ -762,6 +788,9 @@
                                                    <HBox.margin>
                                                       <Insets left="50.0" />
                                                    </HBox.margin>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
                                                 </Button>
                                              </children>
                                           </HBox>
@@ -786,6 +815,9 @@
                                  <VBox.margin>
                                     <Insets left="40.0" top="10.0" />
                                  </VBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
                               </Button>
                               <ImageView fx:id="ImgView" fitHeight="180.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -1001,10 +1033,13 @@
                                           <Insets left="20.0" top="5.0" />
                                        </HBox.margin>
                                     </Label>
-                                    <TextField fx:id="var77" prefWidth="822.0">
+                                    <TextField fx:id="var77" prefWidth="822.0" text="Los factores determinados para la valorización al  son los siguientes:">
                                        <HBox.margin>
                                           <Insets left="10.0" />
                                        </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
                                     </TextField>
                                  </children>
                                  <padding>
@@ -1327,10 +1362,13 @@
                               <Insets left="20.0" />
                            </HBox.margin>
                         </TextField>
-                        <DatePicker fx:id="fechafinal" onAction="#fechfinal">
+                        <DatePicker fx:id="fechafinal" onAction="#fechfinal" promptText="Fecha Informe">
                            <HBox.margin>
                               <Insets left="50.0" />
                            </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </DatePicker>
                         <TextField fx:id="var103" prefHeight="25.0" prefWidth="420.0">
                            <HBox.margin>
