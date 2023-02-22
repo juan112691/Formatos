@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AjuntarIMGController">
+   <children>
+      <Pane style="-fx-border-color: #000000;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <HBox prefHeight="35.0" prefWidth="580.0">
+               <children>
+                  <Label text="ADJUNTAR IMAGENES">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox layoutY="40.0" prefHeight="400.0" prefWidth="580.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="555.0">
+                     <children>
+                        <Button fx:id="btnadjuntar1" mnemonicParsing="false" onAction="#adjuntar1" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #026F70;" text="Imagen1" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="txtadjuntar1" editable="false" focusTraversable="false" prefHeight="30.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="txttitulo1" prefHeight="30.0" prefWidth="200.0" promptText="Ingrese el Título de la Imagen">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hb1" disable="true" prefHeight="40.0" prefWidth="555.0">
+                     <children>
+                        <Button fx:id="btnadjuntar2" mnemonicParsing="false" onAction="#adjuntar2" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #026F70;" text="Imagen2" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="txtadjuntar2" editable="false" prefHeight="30.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="txttitulo2" prefHeight="30.0" prefWidth="200.0" promptText="Ingrese el Título de la Imagen">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hb2" disable="true" prefHeight="40.0" prefWidth="555.0">
+                     <children>
+                        <Button fx:id="btnadjuntar3" mnemonicParsing="false" onAction="#adjuntar3" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #026F70;" text="Imagen3" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="txtadjuntar3" editable="false" prefHeight="30.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="txttitulo3" prefHeight="30.0" prefWidth="200.0" promptText="Ingrese el Título de la Imagen">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hb3" disable="true" prefHeight="40.0" prefWidth="555.0">
+                     <children>
+                        <Button fx:id="btnadjuntar4" mnemonicParsing="false" onAction="#adjuntar4" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #026F70;" text="Imagen4" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="txtadjuntar4" editable="false" prefHeight="30.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="txttitulo4" prefHeight="30.0" prefWidth="200.0" promptText="Ingrese el Título de la Imagen">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hb4" disable="true" prefHeight="40.0" prefWidth="555.0">
+                     <children>
+                        <Button fx:id="btnadjuntar5" mnemonicParsing="false" onAction="#adjuntar5" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #026F70;" text="Imagen5" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="txtadjuntar5" editable="false" prefHeight="30.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="txttitulo5" prefHeight="30.0" prefWidth="200.0" promptText="Ingrese el Título de la Imagen">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hb5" disable="true" prefHeight="40.0" prefWidth="555.0">
+                     <children>
+                        <Button fx:id="btnadjuntar6" mnemonicParsing="false" onAction="#adjuntar6" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #026F70;" text="Imagen6" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="txtadjuntar6" editable="false" prefHeight="30.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="txttitulo6" prefHeight="30.0" prefWidth="200.0" promptText="Ingrese el Título de la Imagen">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hb6" disable="true" prefHeight="40.0" prefWidth="555.0">
+                     <children>
+                        <Button fx:id="btnadjuntar7" mnemonicParsing="false" onAction="#adjuntar7" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #026F70;" text="Imagen7" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="txtadjuntar7" editable="false" prefHeight="30.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="txttitulo7" prefHeight="30.0" prefWidth="200.0" promptText="Ingrese el Título de la Imagen">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hb7" disable="true" prefHeight="40.0" prefWidth="555.0">
+                     <children>
+                        <Button fx:id="btnadjuntar8" mnemonicParsing="false" onAction="#adjuntar8" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #026F70;" text="Imagen8" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="txtadjuntar8" editable="false" prefHeight="30.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="txttitulo8" prefHeight="30.0" prefWidth="200.0" promptText="Ingrese el Título de la Imagen">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="555.0">
+                     <children>
+                        <Button fx:id="btnaceptar" mnemonicParsing="false" onAction="#aceptar" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: #026F70;" text="ACEPTAR" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="220.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
