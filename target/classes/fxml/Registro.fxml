@@ -62,7 +62,7 @@
                               </TextField>
                            </children>
                            <padding>
-                              <Insets bottom="5.0" top="5.0" />
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
                            </padding>
                         </HBox>
                         <HBox layoutY="40.0" prefHeight="35.0" prefWidth="1113.0">
@@ -84,7 +84,7 @@
                               </TextField>
                            </children>
                            <padding>
-                              <Insets bottom="5.0" top="5.0" />
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
                            </padding>
                         </HBox>
                         <HBox layoutY="75.0" prefHeight="35.0" prefWidth="1113.0">
@@ -116,7 +116,7 @@
                               </TextField>
                            </children>
                            <padding>
-                              <Insets bottom="5.0" top="5.0" />
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
                            </padding>
                         </HBox>
                         <HBox layoutY="110.0" prefHeight="35.0" prefWidth="1113.0">
@@ -143,7 +143,7 @@
                               </TextField>
                            </children>
                            <padding>
-                              <Insets bottom="5.0" top="5.0" />
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
                            </padding>
                         </HBox>
                         <HBox layoutY="145.0" prefHeight="35.0" prefWidth="1113.0">
@@ -173,7 +173,7 @@
                               </DatePicker>
                            </children>
                            <padding>
-                              <Insets bottom="5.0" top="5.0" />
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
                            </padding>
                         </HBox>
                         <HBox layoutX="1.0" layoutY="180.0" prefHeight="35.0" prefWidth="1113.0">
@@ -211,7 +211,7 @@
                               </Hyperlink>
                            </children>
                            <padding>
-                              <Insets bottom="5.0" top="5.0" />
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
                            </padding>
                         </HBox>
                         <HBox layoutY="215.0" prefHeight="35.0" prefWidth="1113.0">
@@ -239,7 +239,7 @@
                               </TextField>
                            </children>
                            <padding>
-                              <Insets bottom="5.0" top="5.0" />
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
                            </padding>
                         </HBox>
                         <HBox layoutY="250.0" prefHeight="50.0" prefWidth="1098.0">
@@ -257,7 +257,7 @@
                               </Button>
                            </children>
                            <padding>
-                              <Insets bottom="10.0" top="10.0" />
+                              <Insets bottom="10.0" right="5.0" top="10.0" />
                            </padding>
                         </HBox>
                      </children>

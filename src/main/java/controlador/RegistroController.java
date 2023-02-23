@@ -616,7 +616,7 @@ public class RegistroController implements Initializable {
     void Desc(ActionEvent event) {
         try {
             Parent root = null;
-           root = FXMLLoader.load(getClass().getResource("/fxml/DatosAuto.fxml"));          
+            root = FXMLLoader.load(getClass().getResource("/fxml/DatosAuto.fxml"));          
             Scene scene = new Scene(root);
             Stage stage = new Stage();           
             stage.initModality(Modality.APPLICATION_MODAL);
@@ -869,8 +869,7 @@ public class RegistroController implements Initializable {
                                         fila8.getCell(2).setText(var48.getText());
                                     }
 //-------------------------------------------------------------------------------------------------------------------------                                 
-                                  if (i==11)
-                                    {
+                                  if (i==11){
                                         double tipocamb = Double.parseDouble(var12.getText());
                                         XWPFTable table = docx.getTables().get(1);                                     
                                         System.out.println(table.getText());
@@ -904,7 +903,10 @@ public class RegistroController implements Initializable {
                                         XWPFRun rw3 = cd3.createRun();
                                         rw3.setFontFamily("Garamond");
                                         rw3.setFontSize(8);
+                                        if (var96.getText()!="") {
                                         rw3.setText(formato.format(tipocamb*Double.parseDouble(var96.getText().replace(",",""))));
+                                        
+                                        }
                                 //------------------------------------------------------------
                                     XWPFTableCell celd4 = tbl1.getCell(5);
                                         XWPFParagraph cd4 = celd4.getParagraphArray(0);                                     
@@ -918,7 +920,9 @@ public class RegistroController implements Initializable {
                                         XWPFRun rw5 = cd5.createRun();
                                         rw5.setFontFamily("Garamond");
                                         rw5.setFontSize(8);
-                                        rw5.setText(String.valueOf(formato.format(tipocamb*Double.parseDouble(var97.getText().replace(",","")))));
+                                        if (var97.getText()!="") {
+                                         rw5.setText(String.valueOf(formato.format(tipocamb*Double.parseDouble(var97.getText().replace(",","")))));
+                                        }
                                 //------------------------------------------------------------
                                     XWPFTableCell celd6 = tbl1.getCell(7);
                                         XWPFParagraph cd6 = celd6.getParagraphArray(0);                                     
@@ -932,8 +936,10 @@ public class RegistroController implements Initializable {
                                         XWPFRun rw7 = cd7.createRun();
                                         rw7.setFontFamily("Garamond");
                                         rw7.setFontSize(8);
-                                        //tipocamb*var96.getText();                                       
+                                        //tipocamb*var96.getText();     
+                                        if (var100.getText()!="") {
                                         rw7.setText(String.valueOf(formato.format(tipocamb*Double.parseDouble(var100.getText().replace(",","")))));                                          
+                                        }
                                        // var92.setText(String.valueOf(formato.format(totalvalrepo)));
                                  //------------------------------------------------------------                             
                                     XWPFTableCell celd21 = tbl2.getCell(3);
@@ -950,7 +956,9 @@ public class RegistroController implements Initializable {
                                         rw31.setFontFamily("Garamond");
                                         rw31.setFontSize(8);
                                         rw31.setBold(true);
-                                        rw31.setText(formato.format(tipocamb*Double.parseDouble(var96.getText().replace(",",""))));
+                                        if (var96.getText()!="") {
+                                         rw31.setText(formato.format(tipocamb*Double.parseDouble(var96.getText().replace(",",""))));
+                                        }
                                 //------------------------------------------------------------
                                    XWPFTableCell celd41 = tbl2.getCell(5);
                                         XWPFParagraph cd41 = celd41.getParagraphArray(0);                                     
@@ -966,7 +974,9 @@ public class RegistroController implements Initializable {
                                         rw51.setFontFamily("Garamond");
                                         rw51.setFontSize(8);
                                         rw51.setBold(true);
-                                        rw51.setText(String.valueOf(formato.format(tipocamb*Double.parseDouble(var97.getText().replace(",","")))));
+                                        if (var97.getText()!="") {
+                                       rw51.setText(String.valueOf(formato.format(tipocamb*Double.parseDouble(var97.getText().replace(",","")))));
+                                        }
                                 //------------------------------------------------------------
                                     XWPFTableCell celd61 = tbl2.getCell(7);
                                         XWPFParagraph cd61 = celd61.getParagraphArray(0);                                     
@@ -982,8 +992,10 @@ public class RegistroController implements Initializable {
                                         rw71.setFontFamily("Garamond");
                                         rw71.setFontSize(8);
                                         rw71.setBold(true);
-                                        //tipocamb*var96.getText();                                       
-                                        rw71.setText(String.valueOf(formato.format(tipocamb*Double.parseDouble(var100.getText().replace(",","")))));                                          
+                                        //tipocamb*var96.getText();   
+                                        if (var100.getText()!="") {
+                                         rw71.setText(String.valueOf(formato.format(tipocamb*Double.parseDouble(var100.getText().replace(",","")))));                                          
+                                        }
                                        // var92.setText(String.valueOf(formato.format(totalvalrepo)));
                                     }
 //-------------------------------------------------------------------------------------------------------------------------
@@ -1434,7 +1446,22 @@ public class RegistroController implements Initializable {
                 alert.setHeaderText("Documento Generado");
                 alert.setContentText("Documento Generado con éxito!");
                 alert.showAndWait();
-                Runtime.getRuntime().exec("cmd /c start "+file.toString()); 
+                
+                
+            if (file.exists()) {
+                // Obtener la instancia de Desktop
+                Desktop desktop = Desktop.getDesktop();         
+            try {
+                // Abrir el archivo con la aplicación predeterminada
+                desktop.open(file);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            } else {
+                System.out.println("El archivo no existe.");
+            }
+            
+       // Runtime.getRuntime().exec("cmd /c start "+file.toString()); 
         //Platform.exit();
         }catch(Exception ex){
             ex.printStackTrace();          
