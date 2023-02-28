@@ -1,0 +1,30 @@
+.combo-box{           
+    -fx-background-color: #02706F;
+     -fx-background-image: url('../images/lectura.png');     
+     -fx-background-repeat: no-repeat;
+     -fx-background-position: 30 center;
+     -fx-background-size: 45px 45px;
+     
+}
+.combo-box .text{           
+     -fx-fill: white;
+     -fx-font-size: 17px;
+}
+.combo-box .arrow {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+.combo-box .list-view .list-cell .text {
+    -fx-fill: #000000;
+}
+#pane{
+   -fx-border-color: #000000;
+   -fx-background-color:  #f5f5f5f5;
+}
+
+
+
+/*#hola .text {
+    -fx-fill: red;
+}*/
