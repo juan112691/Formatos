@@ -61,12 +61,17 @@ public class LoadingController implements Initializable {
                         }
                         Scene scene = new Scene(root);
                         Stage stage = new Stage();
-                        stage.setTitle("Ainsac - Master");
+                        stage.setTitle("Ainsac - Formatos");
     //  stage.getIcons().add(new Image(pathHome+"\\icono\\ainsac.png"));
                         stage.getIcons().add(new Image(pathHome+"\\src\\main\\resources\\images\\ainsac.png"));
                         stage.setScene(scene);
                         stage.show();
-                        Pane.getScene().getWindow().hide();                                                                                             
+                        Pane.getScene().getWindow().hide();   
+                        //Scene scene = new Scene(root, 800, 600);
+                        //scene.getStylesheets().add(getClass().getResource(pathHome+"\\src\\main\\resources\\styles\\estilos.css").toExternalForm());
+                  // String cssFile = "file://" + pathHome + "\\src\\main\\resources\\styles\\estilos.css";
+                   //scene.getStylesheets().add(cssFile);
+
                     }                    
                 });
             } catch (InterruptedException ex) {

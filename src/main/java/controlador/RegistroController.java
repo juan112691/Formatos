@@ -549,8 +549,7 @@ public class RegistroController implements Initializable {
             var totalvalrepo = (((valrep1*valrep2)-valrep3)*valrep4);
             DecimalFormat formato = new DecimalFormat("#,##0.00");      
              var92.setText(String.valueOf(formato.format(totalvalrepo)));
-            System.out.println(totalvalrepo); 
-            
+            System.out.println(totalvalrepo);             
             var96.setText(var92.getText());        
     }
  //------------------------------------------------------------
@@ -608,8 +607,7 @@ public class RegistroController implements Initializable {
        var80.setText(var18);
        var81.setText(var19);
        var82.setText(var20);
-       var83.setText(var21);
-              
+       var83.setText(var21);              
     }
 //--------------------------------------------------------------------------------------------------------------------
     @FXML
@@ -668,12 +666,10 @@ public class RegistroController implements Initializable {
 //----------------------------------------------------------------------------------------------------------------------
       @FXML
     void exp(ActionEvent event) {
-        try{
-            
-       
-                        String pathHome = "";
-                        Properties p;           
-                        pathHome = System.getProperty("user.dir");
+        try{                   
+            String pathHome = "";
+            Properties p;           
+            pathHome = System.getProperty("user.dir");
             var mes = var11.getValue().getMonth();
             var dia = var11.getValue().getDayOfMonth();
             var anio0 = var11.getValue().getYear();
@@ -849,8 +845,7 @@ public class RegistroController implements Initializable {
                                   if (i==10)
                                     {
                                         XWPFTable table = docx.getTables().get(0);
-                                        var fil1 = table.getRow(0);
-                                                                               
+                                        var fil1 = table.getRow(0);                                                                              
                                             fil1.getCell(2).setText(var31.getText());
                                             var fila2 = table.getRow(1);
                                             fila2.getCell(2).setText(var31.getText());                                        
@@ -883,7 +878,7 @@ public class RegistroController implements Initializable {
                                         rw0.setFontFamily("Garamond");
                                         rw0.setFontSize(8);
                                         rw0.setText(var27.getText());
-                                //------------------------------------------------------------
+                               //------------------------------------------------------------
                                         XWPFTableCell celd1 = tbl1.getCell(2);
                                         XWPFParagraph cd1 = celd1.getParagraphArray(0);
                                         XWPFRun rw1 = cd1.createRun();
@@ -904,8 +899,7 @@ public class RegistroController implements Initializable {
                                         rw3.setFontFamily("Garamond");
                                         rw3.setFontSize(8);
                                         if (var96.getText()!="") {
-                                        rw3.setText(formato.format(tipocamb*Double.parseDouble(var96.getText().replace(",",""))));
-                                        
+                                        rw3.setText(formato.format(tipocamb*Double.parseDouble(var96.getText().replace(",",""))));                                        
                                         }
                                 //------------------------------------------------------------
                                     XWPFTableCell celd4 = tbl1.getCell(5);
@@ -941,7 +935,7 @@ public class RegistroController implements Initializable {
                                         rw7.setText(String.valueOf(formato.format(tipocamb*Double.parseDouble(var100.getText().replace(",","")))));                                          
                                         }
                                        // var92.setText(String.valueOf(formato.format(totalvalrepo)));
-                                 //------------------------------------------------------------                             
+                                //------------------------------------------------------------                             
                                     XWPFTableCell celd21 = tbl2.getCell(3);
                                         XWPFParagraph cd21 = celd21.getParagraphArray(0);                                     
                                         XWPFRun rw21 = cd21.createRun();
@@ -1001,8 +995,7 @@ public class RegistroController implements Initializable {
 //-------------------------------------------------------------------------------------------------------------------------
                                     if (i==14)
                                     {    
-                                        if (var15 != "" || var15 != null) {
-                                            
+                                        if (var15 != "" || var15 != null) {                                           
                                         }
                                         // var document = new XWPFDocument();
                                         XWPFTable table = docx.getTables().get(2);
@@ -1385,22 +1378,22 @@ public class RegistroController implements Initializable {
 //---------------------------------------------------------------------------------------------------------------------------                                    
                                     if (i == 116) {
                                         if ( dir6!=null ) {  
-                                        System.out.println("****************************************************"+dir1);  
+                                       System.out.println("****************************************************"+dir1);  
                                        run.removeTab();                                       
                                        InputStream pic6 = new FileInputStream(dir6);
                                        run.addPicture(pic6, docx.PICTURE_TYPE_JPEG, "auto6", Units.toEMU(210), Units.toEMU(140));                                        
-                                        pic6.close();
+                                       pic6.close();
                                         }
                                     }
 //---------------------------------------------------------------------------------------------------------------------------                                    
                                     if (i == 120) {
                                         if ( dir7!=null ) {  
-                                        System.out.println("****************************************************"+dir1);  
+                                       System.out.println("****************************************************"+dir1);  
                                        run.removeTab();                                       
                                        InputStream pic7 = new FileInputStream(dir7);
                                        run.addPicture(pic7, docx.PICTURE_TYPE_JPEG, "auto7", Units.toEMU(210), Units.toEMU(140));                                        
-                                        run.addTab();
-                                        pic7.close();
+                                       run.addTab();
+                                       pic7.close();
                                     }
                                     }
 //---------------------------------------------------------------------------------------------------------------------------                                    
@@ -1427,15 +1420,14 @@ public class RegistroController implements Initializable {
                 {
                 table1.removeRow(0);
                 }*/
-                /*   XWPFDocument docx= new XWPFDocument(new FileInputStream("C:\\Users\\juan_\\OneDrive\\Escritorio\\formatos\\vehiculos.docx"));
+                /* XWPFDocument docx= new XWPFDocument(new FileInputStream("C:\\Users\\juan_\\OneDrive\\Escritorio\\formatos\\vehiculos.docx"));
                 XWPFWordExtractor we = new XWPFWordExtractor(docx);
                 System.out.println(we.getText());
                          
                 for (int i = 0; i < we.getText().length(); i++) {
                 System.out.println(we.getText());
                 System.out.println(i+"--------------------------------------");
-                }*/            
-                 
+                }*/                            
                 FileOutputStream ouputStream = new FileOutputStream("src\\main\\resources\\formatos\\vehiculoscopia.docx");
         //  FileOutputStream ouputStream = new FileOutputStream(pathHome+"\\formatos\\vehiculoscopia.docx");
                 docx.write(ouputStream);
@@ -1446,8 +1438,7 @@ public class RegistroController implements Initializable {
                 alert.setHeaderText("Documento Generado");
                 alert.setContentText("Documento Generado con éxito!");
                 alert.showAndWait();
-                
-                
+                               
             if (file.exists()) {
                 // Obtener la instancia de Desktop
                 Desktop desktop = Desktop.getDesktop();         

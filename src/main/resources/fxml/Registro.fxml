@@ -25,7 +25,7 @@
          <content>
             <VBox>
                <children>
-                  <Label text="INGRESAR DATOS VEHICULOS">
+                  <Label text="FORMATO VEHICULOS">
                      <font>
                         <Font name="Garamond" size="30.0" />
                      </font>
