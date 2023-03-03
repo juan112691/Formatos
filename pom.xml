@@ -120,30 +120,25 @@
                 </dependency>
           
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.30</version>           
-        </dependency>
+    <groupId>net.java.dev.jna</groupId>
+    <artifactId>jna</artifactId>
+    <version>5.10.0</version>
+</dependency>
+<dependency>
+    <groupId>net.java.dev.jna</groupId>
+    <artifactId>jna-platform</artifactId>
+    <version>5.10.0</version>
+</dependency>
 
             </dependencies>           
         </profile>
     </profiles>
     <dependencies>
-        <dependency>
-            <groupId>jdbc.library</groupId>
-            <artifactId>mysql.library</artifactId>
-            <version>1.0</version>
-        </dependency>
+        
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>5.2.0</version>
-            <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-graphics</artifactId>
-            <version>17</version>
             <type>jar</type>
         </dependency>
         <dependency>
@@ -167,6 +162,23 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-web</artifactId>
+            <version>17</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+            <version>17</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>jfxtras</groupId>
+            <artifactId>jfxtras</artifactId>
+            <version>17.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
             <version>17</version>
             <type>jar</type>
         </dependency>
