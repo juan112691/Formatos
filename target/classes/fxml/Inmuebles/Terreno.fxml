@@ -72,14 +72,14 @@
                                     <Insets left="20.0" top="5.0" />
                                  </HBox.margin>
                               </Label>
-                              <TextField prefHeight="25.0" prefWidth="485.0" text="MIRYAM IVONNE SEMINARIO VALLE y LUIS ERNESTO GAMARRA ROIG">
+                              <TextField prefHeight="25.0" prefWidth="220.0" text="MIRYAM IVONNE SEMINARIO VALLE ">
                                  <HBox.margin>
                                     <Insets left="5.0" />
                                  </HBox.margin>
                               </TextField>
-                              <TextField prefWidth="245.0" promptText="Agencia" text="BANCO">
+                              <TextField prefWidth="245.0" text="LUIS ERNESTO GAMARRA ROIG">
                                  <HBox.margin>
-                                    <Insets left="30.0" />
+                                    <Insets left="20.0" />
                                  </HBox.margin>
                               </TextField>
                            </children>
