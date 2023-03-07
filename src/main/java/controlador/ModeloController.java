@@ -51,7 +51,6 @@ public class ModeloController implements Initializable {
     void Inmueble(ActionEvent event) {
     ComboBox<String> comboBox = (ComboBox<String>) event.getSource();
     String selectedOption = comboBox.getValue();
-    System.out.println("Opción seleccionada: " + selectedOption);
         if (selectedOption.equals("TERRENO")) {
            try{
                 Parent dashboard = FXMLLoader.load(getClass().getResource("/fxml/Inmuebles/Terreno.fxml"));
